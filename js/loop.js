@@ -7,10 +7,10 @@
 
 const arr = ["a", "b", "c", "d"];
 
-for (const i in arr) {
-  console.log(i);
-  console.log(arr[i]);
-}
+// for (const i in arr) {
+//   console.log(i);
+//   //   console.log(arr[i]);
+//  }
 
 //i는 내가 마음대로 정할 수 있는 거 arr는 위에서 지정한 상수
 
@@ -18,8 +18,9 @@ for (const i in arr) {
 // signiture : for(const loop variable of array or object){}
 // for in문과 다르게 for of문의 경우 변수에 할달된 데이터를 인덱스가 아니라 해당 인덱스이 값을 직접 리턴한다.
 
-for (const i of arr) {
-}
+// for (const i of arr) {
+//   console.log(i);
+// }
 
 //for in이 가져오는 건 1,2,3,4 for of가 가져오는 건 a,b,c,d
 
@@ -30,4 +31,78 @@ for (const i of arr) {
 // for문의 경우 반복 횟수를 지정할 수 있어서 디데일한 컨트롤이 가능하다.
 // for문의 반복 변수를 재할당되기 때문에 const 상수를 선언하면 안된다.
 
+// console.log(arr);
+const numArr = [1, 2, 3, 4, 5];
+for (let i = 0; i < 5; i++) {
+  const element = numArr[i]; //배열 요소의 접근은 [] 안에 인덱스로 접근한다.
+  //console.log(i); //i 변수 자체는 인덱스이다.
+  //console.log(element);
+  //for 배열 코드 블럭 안의 변수는 밖에서 읽을 수 없다.
+}
+
+//0~99까지의 합
+let sum = 0;
+for (let i = 0; i < 10; i++) {
+  sum += i; //sum = sum + i
+}
+
+// 1. sum = 0 + 0;
+// 2. sum = 0 + 1;
+// 3. sum = 1 + 2;
+// 4. sum = 3 + 3;
+// 5. sum = 6 + 4;
+// 6. sum = 10 + 5;
+// 7. sum = 15 + 6;
+// 8. sum = 21 + 7;
+// 9. sum = 28 + 8;
+// 10. sum = 36 + 9;
+// 45
+
+//console.log(sum);
+
+//네비게이션 만들기
+
+const ulTag = document.querySelector("ul");
+//console.log(ulTag);
+
+const navLists = ["home", "about", "product", "contact"];
+
+for (let i = 0; i < navLists.length; i++) {
+  const liTags = document.createElement("li");
+  const element = navLists[i];
+  liTags.innerHTML = element;
+  ulTag.append(liTags);
+
+  //console.log(liTags);
+}
+
 // 중첩 for문
+
+// 별찍기
+// for (let i = 0; i < 10; i++) {
+//   for (let j = 0; j <= i; j++) {
+//     document.write("*");
+//   }
+//   document.write("</br>");
+// }
+
+// for (let i = 0; i < 5; i++) {
+//   for (let j = 0; j < i; j++) {
+//     document.write("*");
+//   }
+//   document.write("</br>");
+// }
+
+// for (let i = 0; i < 5; i++) {
+//   for (let j = 5; j > i; j--) {
+//     document.write("*");
+//   }
+//   document.write("</br>");
+// }
+
+for (let i = 0; i < 10; i++) {
+  for (let j = 0; j < i; j++) {
+    document.write("*");
+  }
+  document.write("</br>");
+}
