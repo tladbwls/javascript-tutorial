@@ -5,19 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Variable</title>
+    <link rel="stylesheet" href="css/style.css" />
     <!-- 자바스크립트 파일 로드는 헤더 내부에 작성하는 것을 권한다. 하지만 런타임 언어의 특성 때문에 작성괴는 시점 이전의 요소만 선택 된다. 이를 해결할 수 있는 것은 스트립트 태그에 defer, async 속성을 사용하면 된다.일반적으로는 문서 맨 아래 작성하는 경우가 많다. -->
   </head>
   <body>
-    <div class="timer"></div>
+    <!-- <div class="timer"></div>
     <img />
     <ul>
-      <!-- <li>home</li>
+      <li>home</li>
       <li>about</li>
       <li>product</li>
-      <li>contact</li> -->
+      <li>contact</li>
     </ul>
     <div>sample</div>
+
+    <div id="a"></div>
+    <div id="b"></div> -->
     <!-- <script src="js/variablr\.js" async></script> -->
-    <script src="js/object.js"></script>
+
+    <div class="container">
+      <div class="btns">
+        <button class="btn" id="cat">CAT</button>
+        <button class="btn" id="dog">DOG</button>
+      </div>
+      <div class="img-box">
+        <img src="cat.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="insert">
+      <p>middle contents</p>
+    </div>
+
+    <script src="js/dom.js"></script>
   </body>
 </html>

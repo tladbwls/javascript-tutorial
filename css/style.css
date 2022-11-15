@@ -1,0 +1,57 @@
+/* .container {
+  width: 100%;
+  height: auto;
+}
+
+.container .btns {
+  display: flex;
+  /* margin: 1rem; */
+/* padding: 3rem; 
+}
+
+.container .btns > button {
+  width: 30%;
+  height: 5rem;
+  border: 1px solid;
+  margin: 1rem;
+}
+
+.container .img-box {
+  width: 60%;
+  margin-left: 1rem;
+  padding: 1rem;
+  height: 300px;
+  border: 1px solid;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btns {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  outline: 0;
+  padding: 1rem 2rem;
+  background: #1da1f2;
+  color: #fff;
+  width: calc(50% - 0.25rem);
+  border: 1px solid #1da1f2;
+}
+
+.img-box {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 0.5rem;
+}
+
+.img-box img {
+  width: 100%;
+}
