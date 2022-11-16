@@ -131,3 +131,4 @@ insert.prepend(h2Tag);
 
 // 7. 문서 객체 제거
 // - DOMname.remove() : 선택된 문서객체를 삭제한다.
+h2Tag.remobe();

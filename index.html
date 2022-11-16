@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Variable</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- 자바스크립트 파일 로드는 헤더 내부에 작성하는 것을 권한다. 하지만 런타임 언어의 특성 때문에 작성괴는 시점 이전의 요소만 선택 된다. 이를 해결할 수 있는 것은 스트립트 태그에 defer, async 속성을 사용하면 된다.일반적으로는 문서 맨 아래 작성하는 경우가 많다. -->
   </head>
   <body>
@@ -37,6 +41,19 @@
       <p>middle contents</p>
     </div>
 
-    <script src="js/dom.js"></script>
+    <div class="count">
+      <button type="button" class="count-btn">Plus</button>
+      <p class="num">0</p>
+    </div>
+
+    <div class="key-area">
+      <input type="text" class="input" />
+      <button type="button" class="key-btn">Press To Enter</button>
+    </div>
+    <div class="toTop">
+      <i class="ri-arrow-up-circle-fill"></i>
+    </div>
+
+    <script src="js/event.js"></script>
   </body>
 </html>
